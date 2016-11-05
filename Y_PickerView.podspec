@@ -29,7 +29,8 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/1ilI/Y_PickerView"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+  s.screenshots  = "https://raw.githubusercontent.com/1ilI/Y_PickerView/master/Y_PickerView.gif"
+  
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
