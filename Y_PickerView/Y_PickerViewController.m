@@ -14,6 +14,7 @@
 typedef NS_ENUM(NSUInteger, PickerStyle) {
     PickerStyle_DatePicker,
     PickerStyle_CustomPicker,
+    PickerStyle_CityPicker,
 };
 
 @interface Y_PickerViewController ()<UIPickerViewDelegate, UIPickerViewDataSource>
@@ -26,6 +27,7 @@ typedef NS_ENUM(NSUInteger, PickerStyle) {
 @property (strong, nonatomic) CALayer   *lineLay;
 @property (assign, nonatomic) BOOL      needAnimateMainView;
 @property (copy, nonatomic)   NSString  *displayProperty;
+@property (copy, nonatomic)   NSString  *subArrProperty;
 
 @property (nonatomic, strong) NSArray *dataSource;
 @property (nonatomic, strong) NSArray *recomendData;
@@ -42,6 +44,15 @@ typedef NS_ENUM(NSUInteger, PickerStyle) {
     // Do any additional setup after loading the view.
     self.selectedIndexDictionary = [NSMutableDictionary new];
     self.selectedValueDictionary = [NSMutableDictionary new];
+    
+    //省市县模式 初始化就全部选中第一条数据
+    if (_style == PickerStyle_CityPicker) {
+        _selectedIndexDictionary = [NSMutableDictionary dictionaryWithDictionary:@{@"0":@(0), @"1":@(0), @"2":@(0)}];
+        [_selectedValueDictionary setObject:[_dataSource firstObject] forKey:@"0"];
+        [_selectedValueDictionary setObject:[[self cityDataArr] firstObject] forKey:@"1"];
+        [_selectedValueDictionary setObject:[[self countyData] firstObject] forKey:@"2"];
+    }
+    
     self.selectedIndex = -1;
     
     self.view.backgroundColor = [UIColor colorWithWhite:0.1 alpha:0.3];
@@ -91,6 +102,35 @@ typedef NS_ENUM(NSUInteger, PickerStyle) {
         [self.picker reloadAllComponents];
     }
     return self;
+}
+
+- (instancetype)initCityPickerWithArray:(NSArray *)data displayProperty:(NSString *)displayProperty subArrProperty:(NSString *)subArrProperty completionHandle:(CustomPickerResult)handler {
+    if (self = [super init]) {
+        self.displayProperty = displayProperty;
+        self.subArrProperty = subArrProperty;
+        self.isNeedDefault = NO;
+        self.recomendData = nil;
+        self.style = PickerStyle_CityPicker;
+        self.customPickerBlock = handler;
+        self.dataSource = [data copy];
+        [self.picker reloadAllComponents];
+    }
+    return self;
+}
+
+//获取到 省下所有的 市的数据
+- (NSArray *)cityDataArr {
+    NSInteger selectProvince = [[_selectedIndexDictionary valueForKey:@"0"] integerValue];
+    NSArray *cityData = [self subArrWithDataModel:[_dataSource objectAtIndex:selectProvince]];
+    return cityData;
+}
+
+//获取到 市下所有的 县的数据
+- (NSArray *)countyData {
+    NSArray *cityData = [self cityDataArr];
+    NSInteger selectCity = [[_selectedIndexDictionary valueForKey:@"1"] integerValue];
+    NSArray *countyData = [self subArrWithDataModel:[cityData objectAtIndex:selectCity]];
+    return countyData;
 }
 
 //检查数据的合法性
@@ -144,7 +184,7 @@ typedef NS_ENUM(NSUInteger, PickerStyle) {
             self.dataPickerBlock(_datePicker.date);
         }
     }
-    else if (self.style == PickerStyle_CustomPicker) {
+    else if (_style == PickerStyle_CustomPicker || _style == PickerStyle_CityPicker) {
         if (self.customPickerBlock) {
             self.customPickerBlock([self.selectedIndexDictionary copy], [self.selectedValueDictionary copy]);
         }
@@ -155,7 +195,8 @@ typedef NS_ENUM(NSUInteger, PickerStyle) {
 
 //判断是否有为空的数据
 - (BOOL)existEmptyData {
-    for (NSInteger index = 0; index < self.dataSource.count; index ++) {
+    NSInteger max = (_style == PickerStyle_CityPicker) ? 3 : _dataSource.count;
+    for (NSInteger index = 0; index < max; index ++) {
         if (![self.selectedIndexDictionary objectForKey:[NSString stringWithFormat:@"%ld", (long)index]]) {
             return YES;
         }
@@ -165,22 +206,73 @@ typedef NS_ENUM(NSUInteger, PickerStyle) {
 
 //检查数据，将空数据赋值为一个条数据
 - (void)checkEmptyData {
-    [self.dataSource enumerateObjectsUsingBlock:^(NSArray   * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (![self.selectedIndexDictionary objectForKey:[NSString stringWithFormat:@"%ld", (long)idx]]) {
-            [self.selectedIndexDictionary setObject:@(0) forKey:[NSString stringWithFormat:@"%ld", (long)idx]];
+    //省市县模式下
+    if (_style == PickerStyle_CityPicker) {
+        if (![_selectedValueDictionary objectForKey:@"0"]) {
+            [_selectedValueDictionary setObject:[_dataSource firstObject] forKey:@"0"];
+            [_selectedIndexDictionary setObject:@(0) forKey:@"0"];
         }
-        if (![self.selectedValueDictionary objectForKey:[NSString stringWithFormat:@"%ld", (long)idx]]) {
-            [self.selectedValueDictionary setObject:obj.firstObject forKey:[NSString stringWithFormat:@"%ld", (long)idx]];
+        if (![_selectedValueDictionary objectForKey:@"1"]) {
+            [_selectedValueDictionary setObject:[[self cityDataArr] firstObject] forKey:@"1"];
+            [_selectedIndexDictionary setObject:@(0) forKey:@"1"];
         }
-    }];
+        if (![_selectedValueDictionary objectForKey:@"2"]) {
+            [_selectedValueDictionary setObject:[[self countyData] firstObject] forKey:@"2"];
+            [_selectedIndexDictionary setObject:@(0) forKey:@"2"];
+        }
+    }
+    //非省市县模式
+    else {
+        [self.dataSource enumerateObjectsUsingBlock:^(NSArray   * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            if (![self.selectedIndexDictionary objectForKey:[NSString stringWithFormat:@"%ld", (long)idx]]) {
+                [self.selectedIndexDictionary setObject:@(0) forKey:[NSString stringWithFormat:@"%ld", (long)idx]];
+            }
+            if (![self.selectedValueDictionary objectForKey:[NSString stringWithFormat:@"%ld", (long)idx]]) {
+                [self.selectedValueDictionary setObject:obj.firstObject forKey:[NSString stringWithFormat:@"%ld", (long)idx]];
+            }
+        }];
+    }
+}
+
+
+- (NSArray *)subArrWithDataModel:(id)dataModel {
+    SEL subArrSel = NSSelectorFromString(_subArrProperty);
+    if ([dataModel respondsToSelector:subArrSel]) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+        NSArray *subArr = [dataModel performSelector:subArrSel];
+#pragma clang diagnostic pop
+        return subArr;
+    }
+    return nil;
 }
 
 #pragma mark - ===== UIPickerViewDataSource =====
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    //省市县模式
+    if (_style == PickerStyle_CityPicker) {
+        return 3;
+    }
+    //其他模式
     return self.dataSource.count;
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    //省市县模式
+    if (_style == PickerStyle_CityPicker) {
+        NSArray *cityData = [self cityDataArr];
+        NSArray *countyData = [self countyData];
+        if (component == 0) {
+            return [_dataSource count];
+        }
+        else if (component == 1) {
+            return [cityData count];
+        }
+        else if (component == 2) {
+            return [countyData count];
+        }
+    }
+    //其他模式
     NSArray *array = self.dataSource[component];
     if (self.isNeedDefault) {
         return array.count + 1;
@@ -191,6 +283,30 @@ typedef NS_ENUM(NSUInteger, PickerStyle) {
 
 #pragma mark - ===== UIPickerViewDelegate =====
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    //省市县模式
+    if (_style == PickerStyle_CityPicker) {
+        NSArray *cityData = [self cityDataArr];
+        NSArray *countyData = [self countyData];
+        
+        if (component == 0) {
+            return [self returnDisplayTitle:_dataSource[row]];
+        }
+        else if (component == 1) {
+            if (row < cityData.count) {
+                id city = [cityData objectAtIndex:row];
+                return [self returnDisplayTitle:city];
+            }
+        }
+        else if (component == 2) {
+            if (row < countyData.count) {
+                id county = [countyData objectAtIndex:row];
+                return [self returnDisplayTitle:county];
+            }
+        }
+        return nil;
+    }
+    
+    //其他模式
     NSArray *array = self.dataSource[component];
     //有提示项
     if (self.isNeedDefault) {
@@ -224,23 +340,62 @@ typedef NS_ENUM(NSUInteger, PickerStyle) {
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
-    NSArray *array = self.dataSource[component];
-    if (self.isNeedDefault) {
-        if (row == 0) {
-            [self.selectedIndexDictionary removeObjectForKey:[NSString stringWithFormat:@"%ld", (long)component]];
-            [self.selectedValueDictionary removeObjectForKey:[NSString stringWithFormat:@"%ld", (long)component]];
+    NSString *key = [NSString stringWithFormat:@"%ld", (long)component];
+    //省市县模式下
+    if (_style == PickerStyle_CityPicker) {
+        [_selectedIndexDictionary setObject:@(row) forKey:key];
+        if (component == 0) {
+            //保存好index然后再刷新Component选择row
+            [_selectedIndexDictionary setObject:@(0) forKey:@"1"];
+            [_selectedIndexDictionary setObject:@(0) forKey:@"2"];
+            [_picker reloadComponent:1];
+            [_picker reloadComponent:2];
+            [_picker selectRow:0 inComponent:2 animated:YES];
+            [_picker selectRow:0 inComponent:1 animated:YES];
+        }
+        else if (component == 1) {
+            //保存好index然后再刷新Component选择row
+            [_selectedIndexDictionary setObject:@(0) forKey:@"2"];
+            [_picker reloadComponent:2];
+            [_picker selectRow:0 inComponent:2 animated:YES];
+        }
+        else if (component == 2) {
+        }
+        //保存选择内容
+        [self saveSelectedValueDictionary];
+    }
+    //其他模式
+    else {
+        NSArray *array = self.dataSource[component];
+        if (self.isNeedDefault) {
+            if (row == 0) {
+                [self.selectedIndexDictionary removeObjectForKey:key];
+                [self.selectedValueDictionary removeObjectForKey:key];
+            }
+            else {
+                [self.selectedIndexDictionary setObject:@(row - 1) forKey:key];
+                [self.selectedValueDictionary setObject:array[row - 1] forKey:key];
+                self.selectedIndex = row - 1;
+            }
         }
         else {
-            [self.selectedIndexDictionary setObject:@(row - 1) forKey:[NSString stringWithFormat:@"%ld", (long)component]];
-            [self.selectedValueDictionary setObject:array[row - 1] forKey:[NSString stringWithFormat:@"%ld", (long)component]];
-            self.selectedIndex = row - 1;
+            [self.selectedIndexDictionary setObject:@(row) forKey:key];
+            [self.selectedValueDictionary setObject:array[row] forKey:key];
+            self.selectedIndex = row;
         }
     }
-    else {
-        [self.selectedIndexDictionary setObject:@(row) forKey:[NSString stringWithFormat:@"%ld", (long)component]];
-        [self.selectedValueDictionary setObject:array[row] forKey:[NSString stringWithFormat:@"%ld", (long)component]];
-        self.selectedIndex = row;
-    }
+}
+
+- (void)saveSelectedValueDictionary {
+    NSInteger provinceIdx = [[_selectedIndexDictionary valueForKey:@"0"] integerValue];
+    id province = [_dataSource objectAtIndex:provinceIdx];
+    [_selectedValueDictionary setObject:province forKey:@"0"];
+    NSInteger cityIdx = [[_selectedIndexDictionary valueForKey:@"1"] integerValue];
+    id city = [[self cityDataArr] objectAtIndex:cityIdx];
+    [_selectedValueDictionary setObject:city forKey:@"1"];
+    NSInteger countyIdx = [[_selectedIndexDictionary valueForKey:@"2"] integerValue];
+    id county = [[self countyData] objectAtIndex:countyIdx];
+    [_selectedValueDictionary setObject:county forKey:@"2"];
 }
 
 #pragma mark - ===== 懒加载 =====
@@ -265,6 +420,9 @@ typedef NS_ENUM(NSUInteger, PickerStyle) {
             [view addSubview:self.datePicker];
         }
         else if (self.style == PickerStyle_CustomPicker) {
+            [view addSubview:self.picker];
+        }
+        else if (self.style == PickerStyle_CityPicker) {
             [view addSubview:self.picker];
         }
         

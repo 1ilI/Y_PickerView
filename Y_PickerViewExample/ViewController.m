@@ -11,6 +11,8 @@
 #import "Model.h"
 #import "SubjectModel.h"
 #import "GradeModel.h"
+#import "YYModel.h"
+#import "AreaModel.h"
 
 static NSString *const tableViewCellID = @"tableViewCellReuseIdentifier";
 @interface ViewController ()
@@ -26,7 +28,7 @@ static NSString *const tableViewCellID = @"tableViewCellReuseIdentifier";
     // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.title = @"Y_PickerView";
     
-    self.dataArr = @[@"默认日期选择（UIDatePickerModeDate）",@"日期选择（UIDatePickerModeDateAndTime）",@"单列PickerView",@"单列PickerView-带有默认值",@"单列PickerView-模型数组",@"多列PickerView",@"多列PickerView-模型数组"];
+    self.dataArr = @[@"默认日期选择（UIDatePickerModeDate）",@"日期选择（UIDatePickerModeDateAndTime）",@"单列PickerView",@"单列PickerView-带有默认值",@"单列PickerView-模型数组",@"多列PickerView",@"多列PickerView-模型数组",@"省市县 PickerView"];
     self.tableView.tableFooterView = [UIView new];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:tableViewCellID];
 }
@@ -176,6 +178,22 @@ static NSString *const tableViewCellID = @"tableViewCellReuseIdentifier";
         SubjectModel *selected1 = [selectedValueDic valueForKey:@"1"];
         GradeModel *selected2 = [selectedValueDic valueForKey:@"2"];
         NSLog(@"--->%@--->%@--->%@--->%@--->%@",person.name, selected1.name, selected1.subjectID, selected2.name, selected2.gradeID);
+    }];
+    [picker showPickerVC:self];
+}
+
+- (void)showPicker8 {
+    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"area2" ofType:@"json"];
+    NSData *data = [[NSData alloc] initWithContentsOfFile:jsonPath];
+    id jsonData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+    
+    NSArray *areaList = [NSArray yy_modelArrayWithClass:[AreaModel class] json:jsonData];
+    Y_PickerViewController *picker = [[Y_PickerViewController alloc] initCityPickerWithArray:areaList displayProperty:@"name" subArrProperty:@"subArr" completionHandle:^(NSDictionary *selectedIndexDic, NSDictionary *selectedValueDic) {
+        AreaModel *province = [selectedValueDic valueForKey:@"0"];
+        AreaModel *city = [selectedValueDic valueForKey:@"1"];
+        AreaModel *county = [selectedValueDic valueForKey:@"2"];
+        NSLog(@"--->%@:%@--->%@:%@--->%@:%@",province.name, province.shortCode, city.name, city.shortCode, county.name, county.shortCode);
+        NSLog(@"----->%@",selectedIndexDic);
     }];
     [picker showPickerVC:self];
 }

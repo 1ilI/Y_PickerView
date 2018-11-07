@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A39BE2A21913BCA0074AEB8 /* area2.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A39BE2921913BCA0074AEB8 /* area2.json */; };
+		8A39BE2D21913C050074AEB8 /* AreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A39BE2C21913C050074AEB8 /* AreaModel.m */; };
+		8A39BE3421913D220074AEB8 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A39BE3121913D220074AEB8 /* NSObject+YYModel.m */; };
+		8A39BE3521913D220074AEB8 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A39BE3221913D220074AEB8 /* YYClassInfo.m */; };
 		8A58E6A321902BCF007CA535 /* SubjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A58E6A221902BCF007CA535 /* SubjectModel.m */; };
 		8A58E6A621902BDD007CA535 /* GradeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A58E6A521902BDD007CA535 /* GradeModel.m */; };
 		8A5EBF122190240D00EB396B /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5EBF112190240D00EB396B /* Model.m */; };
@@ -19,6 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A39BE2921913BCA0074AEB8 /* area2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = area2.json; sourceTree = "<group>"; };
+		8A39BE2B21913C050074AEB8 /* AreaModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AreaModel.h; sourceTree = "<group>"; };
+		8A39BE2C21913C050074AEB8 /* AreaModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AreaModel.m; sourceTree = "<group>"; };
+		8A39BE2F21913D220074AEB8 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		8A39BE3021913D220074AEB8 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		8A39BE3121913D220074AEB8 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		8A39BE3221913D220074AEB8 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		8A39BE3321913D220074AEB8 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
 		8A58E6A121902BCF007CA535 /* SubjectModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubjectModel.h; sourceTree = "<group>"; };
 		8A58E6A221902BCF007CA535 /* SubjectModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubjectModel.m; sourceTree = "<group>"; };
 		8A58E6A421902BDD007CA535 /* GradeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradeModel.h; sourceTree = "<group>"; };
@@ -49,6 +61,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A39BE2E21913D220074AEB8 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				8A39BE2F21913D220074AEB8 /* YYClassInfo.h */,
+				8A39BE3021913D220074AEB8 /* YYModel.h */,
+				8A39BE3121913D220074AEB8 /* NSObject+YYModel.m */,
+				8A39BE3221913D220074AEB8 /* YYClassInfo.m */,
+				8A39BE3321913D220074AEB8 /* NSObject+YYModel.h */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
 		8AB79CDB1DCDB22C003B4C2B = {
 			isa = PBXGroup;
 			children = (
@@ -68,11 +92,15 @@
 		8AB79CE61DCDB22C003B4C2B /* Y_PickerViewExample */ = {
 			isa = PBXGroup;
 			children = (
+				8A39BE2E21913D220074AEB8 /* YYModel */,
 				8AB79CFD1DCDB255003B4C2B /* Y_PickerView */,
 				8AB79CE71DCDB22C003B4C2B /* AppDelegate.h */,
 				8AB79CE81DCDB22C003B4C2B /* AppDelegate.m */,
 				8A5EBF102190240D00EB396B /* Model.h */,
 				8A5EBF112190240D00EB396B /* Model.m */,
+				8A39BE2921913BCA0074AEB8 /* area2.json */,
+				8A39BE2B21913C050074AEB8 /* AreaModel.h */,
+				8A39BE2C21913C050074AEB8 /* AreaModel.m */,
 				8A58E6A121902BCF007CA535 /* SubjectModel.h */,
 				8A58E6A221902BCF007CA535 /* SubjectModel.m */,
 				8A58E6A421902BDD007CA535 /* GradeModel.h */,
@@ -155,6 +183,7 @@
 			files = (
 				8AB79CF41DCDB22E003B4C2B /* LaunchScreen.storyboard in Resources */,
 				8AB79CF11DCDB22E003B4C2B /* Assets.xcassets in Resources */,
+				8A39BE2A21913BCA0074AEB8 /* area2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,12 +194,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A39BE3421913D220074AEB8 /* NSObject+YYModel.m in Sources */,
+				8A39BE2D21913C050074AEB8 /* AreaModel.m in Sources */,
 				8AB79D001DCDB256003B4C2B /* Y_PickerViewController.m in Sources */,
 				8AB79CEC1DCDB22C003B4C2B /* ViewController.m in Sources */,
 				8A58E6A621902BDD007CA535 /* GradeModel.m in Sources */,
 				8A58E6A321902BCF007CA535 /* SubjectModel.m in Sources */,
 				8A5EBF122190240D00EB396B /* Model.m in Sources */,
 				8AB79CF71DCDB22E003B4C2B /* main.m in Sources */,
+				8A39BE3521913D220074AEB8 /* YYClassInfo.m in Sources */,
 				8AB79CE91DCDB22C003B4C2B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

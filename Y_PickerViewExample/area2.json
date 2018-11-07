@@ -1,0 +1,1359 @@
+[
+        {
+            "shortCode": "32",
+            "name": "江苏省",
+            "grade": "1",
+            "city": [
+                {
+                    "shortCode": "32",
+                    "name": "省本级",
+                    "grade": "1",
+                    "area":[
+                        {
+                            "shortCode": "32",
+                            "name": "省本级",
+                            "grade": "1"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "3201",
+                    "name": "南京市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "320101",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320102",
+                            "name": "玄武区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320104",
+                            "name": "秦淮区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320105",
+                            "name": "建邺区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320106",
+                            "name": "鼓楼区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320111",
+                            "name": "浦口区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320113",
+                            "name": "栖霞区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320114",
+                            "name": "雨花台区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320115",
+                            "name": "江宁区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320116",
+                            "name": "六合区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320117",
+                            "name": "溧水区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320118",
+                            "name": "高淳区",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "3202",
+                    "name": "无锡市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "320201",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320205",
+                            "name": "锡山区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320206",
+                            "name": "惠山区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320211",
+                            "name": "滨湖区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320213",
+                            "name": "梁溪区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320214",
+                            "name": "新吴区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320281",
+                            "name": "江阴市",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320282",
+                            "name": "宜兴市",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "3203",
+                    "name": "徐州市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "320301",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320302",
+                            "name": "鼓楼区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320303",
+                            "name": "云龙区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320305",
+                            "name": "贾汪区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320311",
+                            "name": "泉山区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320312",
+                            "name": "铜山区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320321",
+                            "name": "丰县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320322",
+                            "name": "沛县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320324",
+                            "name": "睢宁县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320371",
+                            "name": "徐州经济技术开发区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320381",
+                            "name": "新沂市",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320382",
+                            "name": "邳州市",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "3204",
+                    "name": "常州市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "320401",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320402",
+                            "name": "天宁区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320404",
+                            "name": "钟楼区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320411",
+                            "name": "新北区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320412",
+                            "name": "武进区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320413",
+                            "name": "金坛区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320481",
+                            "name": "溧阳市",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "3205",
+                    "name": "苏州市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "320501",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320505",
+                            "name": "虎丘区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320506",
+                            "name": "吴中区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320507",
+                            "name": "相城区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320508",
+                            "name": "姑苏区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320509",
+                            "name": "吴江区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320571",
+                            "name": "苏州工业园区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320581",
+                            "name": "常熟市",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320582",
+                            "name": "张家港市",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320583",
+                            "name": "昆山市",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320585",
+                            "name": "太仓市",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "3206",
+                    "name": "南通市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "320601",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320602",
+                            "name": "崇川区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320611",
+                            "name": "港闸区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320612",
+                            "name": "通州区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320621",
+                            "name": "海安县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320623",
+                            "name": "如东县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320671",
+                            "name": "南通经济技术开发区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320681",
+                            "name": "启东市",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320682",
+                            "name": "如皋市",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320684",
+                            "name": "海门市",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "3207",
+                    "name": "连云港市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "320701",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320703",
+                            "name": "连云区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320706",
+                            "name": "海州区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320707",
+                            "name": "赣榆区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320722",
+                            "name": "东海县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320723",
+                            "name": "灌云县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320724",
+                            "name": "灌南县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320771",
+                            "name": "连云港经济技术开发区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320772",
+                            "name": "连云港高新技术产业开发区",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "3208",
+                    "name": "淮安市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "320801",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320803",
+                            "name": "淮安区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320804",
+                            "name": "淮阴区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320812",
+                            "name": "清江浦区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320813",
+                            "name": "洪泽区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320826",
+                            "name": "涟水县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320830",
+                            "name": "盱眙县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320831",
+                            "name": "金湖县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320871",
+                            "name": "淮安经济技术开发区",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "3209",
+                    "name": "盐城市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "320901",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320902",
+                            "name": "亭湖区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320903",
+                            "name": "盐都区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320904",
+                            "name": "大丰区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320921",
+                            "name": "响水县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320922",
+                            "name": "滨海县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320923",
+                            "name": "阜宁县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320924",
+                            "name": "射阳县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320925",
+                            "name": "建湖县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320971",
+                            "name": "盐城经济技术开发区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "320981",
+                            "name": "东台市",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "3210",
+                    "name": "扬州市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "321001",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321002",
+                            "name": "广陵区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321003",
+                            "name": "邗江区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321012",
+                            "name": "江都区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321023",
+                            "name": "宝应县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321071",
+                            "name": "扬州经济技术开发区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321081",
+                            "name": "仪征市",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321084",
+                            "name": "高邮市",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "3211",
+                    "name": "镇江市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "321101",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321102",
+                            "name": "京口区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321111",
+                            "name": "润州区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321112",
+                            "name": "丹徒区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321171",
+                            "name": "镇江新区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321181",
+                            "name": "丹阳市",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321182",
+                            "name": "扬中市",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321183",
+                            "name": "句容市",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "3212",
+                    "name": "泰州市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "321201",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321202",
+                            "name": "海陵区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321203",
+                            "name": "高港区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321204",
+                            "name": "姜堰区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321271",
+                            "name": "泰州医药高新技术产业开发区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321281",
+                            "name": "兴化市",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321282",
+                            "name": "靖江市",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321283",
+                            "name": "泰兴市",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "3213",
+                    "name": "宿迁市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "321301",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321302",
+                            "name": "宿城区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321311",
+                            "name": "宿豫区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321322",
+                            "name": "沭阳县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321323",
+                            "name": "泗阳县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321324",
+                            "name": "泗洪县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "321371",
+                            "name": "宿迁经济技术开发区",
+                            "grade": "3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "shortCode": "62",
+            "name": "甘肃省",
+            "grade": "1",
+            "city": [
+                {
+                    "shortCode": "62",
+                    "name": "省本级",
+                    "grade": "1",
+                    "area": [
+                        {
+                            "shortCode": "62",
+                            "name": "省本级",
+                            "grade": "1"
+                        },
+                        ]
+                },
+                {
+                    "shortCode": "6201",
+                    "name": "兰州市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "620101",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620102",
+                            "name": "城关区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620103",
+                            "name": "七里河区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620104",
+                            "name": "西固区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620105",
+                            "name": "安宁区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620111",
+                            "name": "红古区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620121",
+                            "name": "永登县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620122",
+                            "name": "皋兰县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620123",
+                            "name": "榆中县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620171",
+                            "name": "兰州新区",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "6202",
+                    "name": "嘉峪关市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "620201",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620203",
+                            "name": "新城镇",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620204",
+                            "name": "峪泉镇",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620205",
+                            "name": "文殊镇",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620208",
+                            "name": "雄关区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620206",
+                            "name": "镜铁区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620207",
+                            "name": "长城区",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "6203",
+                    "name": "金昌市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "620301",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620302",
+                            "name": "金川区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620321",
+                            "name": "永昌县",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "6204",
+                    "name": "白银市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "620401",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620402",
+                            "name": "白银区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620403",
+                            "name": "平川区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620421",
+                            "name": "靖远县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620422",
+                            "name": "会宁县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620423",
+                            "name": "景泰县",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "6205",
+                    "name": "天水市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "620501",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620502",
+                            "name": "秦州区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620503",
+                            "name": "麦积区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620521",
+                            "name": "清水县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620522",
+                            "name": "秦安县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620523",
+                            "name": "甘谷县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620524",
+                            "name": "武山县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620525",
+                            "name": "张家川回族自治县",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "6206",
+                    "name": "武威市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "620601",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620602",
+                            "name": "凉州区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620621",
+                            "name": "民勤县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620622",
+                            "name": "古浪县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620623",
+                            "name": "天祝藏族自治县",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "6207",
+                    "name": "张掖市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "620701",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620702",
+                            "name": "甘州区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620721",
+                            "name": "肃南裕固族自治县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620722",
+                            "name": "民乐县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620723",
+                            "name": "临泽县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620724",
+                            "name": "高台县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620725",
+                            "name": "山丹县",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "6208",
+                    "name": "平凉市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "620801",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620802",
+                            "name": "崆峒区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620821",
+                            "name": "泾川县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620822",
+                            "name": "灵台县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620823",
+                            "name": "崇信县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620824",
+                            "name": "华亭县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620825",
+                            "name": "庄浪县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620826",
+                            "name": "静宁县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620871",
+                            "name": "平凉工业园区",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "6209",
+                    "name": "酒泉市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "620901",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620902",
+                            "name": "肃州区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620921",
+                            "name": "金塔县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620922",
+                            "name": "瓜州县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620923",
+                            "name": "肃北蒙古族自治县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620924",
+                            "name": "阿克塞哈萨克族自治县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620981",
+                            "name": "玉门市",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "620982",
+                            "name": "敦煌市",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "6210",
+                    "name": "庆阳市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "621001",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621002",
+                            "name": "西峰区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621021",
+                            "name": "庆城县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621022",
+                            "name": "环县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621023",
+                            "name": "华池县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621024",
+                            "name": "合水县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621025",
+                            "name": "正宁县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621026",
+                            "name": "宁县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621027",
+                            "name": "镇原县",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "6211",
+                    "name": "定西市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "621101",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621102",
+                            "name": "安定区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621121",
+                            "name": "通渭县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621122",
+                            "name": "陇西县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621123",
+                            "name": "渭源县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621124",
+                            "name": "临洮县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621125",
+                            "name": "漳县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621126",
+                            "name": "岷县",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "6212",
+                    "name": "陇南市",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "621201",
+                            "name": "市本级",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621202",
+                            "name": "武都区",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621221",
+                            "name": "成县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621222",
+                            "name": "文县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621223",
+                            "name": "宕昌县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621224",
+                            "name": "康县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621225",
+                            "name": "西和县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621226",
+                            "name": "礼县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621227",
+                            "name": "徽县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "621228",
+                            "name": "两当县",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "6229",
+                    "name": "临夏回族自治州",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "622901",
+                            "name": "临夏市",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "622921",
+                            "name": "临夏县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "622922",
+                            "name": "康乐县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "622923",
+                            "name": "永靖县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "622924",
+                            "name": "广河县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "622925",
+                            "name": "和政县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "622926",
+                            "name": "东乡族自治县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "622927",
+                            "name": "积石山保安族东乡族撒拉族自治县",
+                            "grade": "3"
+                        }
+                    ]
+                },
+                {
+                    "shortCode": "6230",
+                    "name": "甘南藏族自治州",
+                    "grade": "2",
+                    "area": [
+                        {
+                            "shortCode": "623001",
+                            "name": "合作市",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "623021",
+                            "name": "临潭县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "623022",
+                            "name": "卓尼县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "623023",
+                            "name": "舟曲县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "623024",
+                            "name": "迭部县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "623025",
+                            "name": "玛曲县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "623026",
+                            "name": "碌曲县",
+                            "grade": "3"
+                        },
+                        {
+                            "shortCode": "623027",
+                            "name": "夏河县",
+                            "grade": "3"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]

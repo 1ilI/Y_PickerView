@@ -10,12 +10,12 @@ Pod::Spec.new do |s|
   #名称
   s.name         = "Y_PickerView"
   #版本
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   #简介
-  s.summary      = "快速创建一个PickerView选择器"
+  s.summary      = "快速创建一个多种样式的 PickerView 选择器"
   #详介
   s.description  = <<-DESC
-                   创建一个带有 UIDatePicker 或 UIPickerView 的选择器试图
+                   创建一个带有 UIDatePicker 或 UIPickerView 的选择器视图
                    DESC
 
   #首页

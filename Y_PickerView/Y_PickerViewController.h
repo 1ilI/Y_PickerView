@@ -39,6 +39,16 @@ typedef void(^CustomPickerResult)(NSDictionary *selectedIndexDic, NSDictionary *
 - (instancetype)initCustomPickerWithArray:(NSArray <NSArray *> *)data displayProperty:(NSString *)displayProperty defaultValue:(NSArray *)defaultValue completionHandle:(CustomPickerResult)handler;
 
 /**
+ 创建省市县 PickerView
+ @param data            数据源
+ @param displayProperty 模型中要在PickerView上显示的字段
+ @param subArrProperty  模型中 子数组 的字段
+ @param handler         回调
+ @return UIPickerView
+ */
+- (instancetype)initCityPickerWithArray:(NSArray *)data displayProperty:(NSString *)displayProperty subArrProperty:(NSString *)subArrProperty completionHandle:(CustomPickerResult)handler;
+
+/**
  展示 PickerViewController
  @param parentVC 父VC
  */
