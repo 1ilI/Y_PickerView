@@ -2,7 +2,7 @@
 对 UIDatePicker/UIPickerView 进行封装，快速创建一个多种样式的 PickerView 选择器。
 
 ## 功能
-一般选择器嘛，都是由一个点击事件触发，然后弹出视图，选择后消失。所以就简单封装一个 UIViewController ，里面有 UIDatePicker/UIPickerView ，可通过传入的自定义数组，来创建视图，选择结果通过 block 获取。
+一般选择器嘛，都是由一个点击事件触发，然后弹出视图，选择后消失。所以就简单封装一个 UIViewController ，里面有 UIDatePicker/UIPickerView ，可通过传入的自定义数组，来创建视图，选择结果通过 block 获取。
 
 现阶段主要就三种模式展示：
 > 日期选择器-UIDatePicker ，使用自带的 datePickerMode 切换样式
@@ -11,11 +11,11 @@
 
 > 省市县选择器，通过传入的模型数组创建选择器
 
-特别之处就是在创建时可指定 `displayProperty` ，这个就是你传入的对象数组中，那个对象模型，你想要在 PickerView 中显示的属性。
+特别之处就是在创建时可指定 `displayProperty` ，这个就是你传入的对象数组中，那个对象模型，你想要在 PickerView 中显示的属性。
 
-这样做的目的是这个库不关心你的数据模型是什么，只要告我讲你要 **在 PickerView 中展示的文字所对应的字段**就可以。
+这样做的目的是这个库不关心你的数据模型是什么，只要告我讲你要 **在 PickerView 中展示的文字所对应的字段**就可以。
 
-省市县的 `subArrProperty` ，也是同理。
+省市县的 `subArrProperty` ，也是同理。
 
 ![show](https://raw.githubusercontent.com/1ilI/Y_PickerView/master/Y_PickerView.gif)
 
@@ -49,7 +49,7 @@ Y_PickerViewController *picker = [[Y_PickerViewController alloc] initCustomPicke
 [picker showPickerVC:self];
 ```
 
-* 省市县PickerView
+* 省市县PickerView
 ```objc
 NSArray *areaList = [NSArray yy_modelArrayWithClass:[AreaModel class] json:jsonData];
 Y_PickerViewController *picker = [[Y_PickerViewController alloc] initCityPickerWithArray:areaList displayProperty:@"name" subArrProperty:@"subArr" completionHandle:^(NSDictionary *selectedIndexDic, NSDictionary *selectedValueDic) {
