@@ -216,8 +216,7 @@
 				8AB79CF31DCDB22E003B4C2B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = /Users/yue/Desktop/GitHub/Y_PickerView/Y_PickerViewExample;
-			sourceTree = "<absolute>";
+			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
