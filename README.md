@@ -5,11 +5,11 @@
 一般选择器嘛，都是由一个点击事件触发，然后弹出视图，选择后消失。所以就简单封装一个 UIViewController ，里面有 UIDatePicker/UIPickerView ，可通过传入的自定义数组，来创建视图，选择结果通过 block 获取。
 
 现阶段主要就三种模式展示：
-> 日期选择器-UIDatePicker ，使用自带的 datePickerMode 切换样式
+> 1. 日期选择器-UIDatePicker ，使用自带的 datePickerMode 切换样式
  
-> 自定义的 UIPickerView ，通过传入的数组数据创建单列或多列 PickerView
+> 2. 自定义的 UIPickerView ，通过传入的数组数据创建单列或多列 PickerView
 
-> 省市县选择器，通过传入的模型数组创建选择器
+> 3. 省市县选择器，通过传入的模型数组创建选择器
 
 特别之处就是在创建时可指定 `displayProperty` ，这个就是你传入的对象数组中，那个对象模型，你想要在 PickerView 中显示的属性。
 
